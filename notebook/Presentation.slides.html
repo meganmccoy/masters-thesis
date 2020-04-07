@@ -11908,15 +11908,6 @@ a.anchor-link {
 <h1 id="Gender-Discrimination-and-Promotions-in-a-Labor-Search-Model">Gender Discrimination and Promotions in a Labor Search Model<a class="anchor-link" href="#Gender-Discrimination-and-Promotions-in-a-Labor-Search-Model">&#182;</a></h1><h2 id="Replication-of-Flabbi-2010-with-an-extension-to-the-model">Replication of Flabbi 2010 with an extension to the model<a class="anchor-link" href="#Replication-of-Flabbi-2010-with-an-extension-to-the-model">&#182;</a></h2><h3 id="Presented-by-Megan-McCoy">Presented by Megan McCoy<a class="anchor-link" href="#Presented-by-Megan-McCoy">&#182;</a></h3>
 </div>
 </div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is a sub- slide</p>
-
-</div>
-</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11949,8 +11940,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p>Continuous time search-match-bargaining model</p>
-<ul>
+<li>Continuous time search-match-bargaining model<ul>
 <li>Common discount rate $\rho$</li>
 <li>Meet at arrival rate $\lambda$, termination at rate $\eta$</li>
 <li>Match-specific productivity $x \sim G(x)$ realized when meeting</li>
@@ -11958,6 +11948,8 @@ a.anchor-link {
 <li>Flow (dis)utility of unemployment $b$</li>
 </ul>
 </li>
+</ul>
+<ul>
 <li><p>Workers $\in$ { Male, Female }</p>
 </li>
 <li><p>Firms $\in$ { Prejudiced, Not Prejudiced }</p>
@@ -11984,7 +11976,8 @@ a.anchor-link {
 </li>
 </ul>
 <ul>
-<li>Data from Current Population Survey (CPS) in 1995<ul>
+<li><p>Data from Current Population Survey (CPS) in 1995</p>
+<ul>
 <li>Age 30-55</li>
 <li>Employed or looking for employment </li>
 <li>White men and women     </li>
@@ -12123,7 +12116,8 @@ a.anchor-link {
 </li>
 <li><p>Density of accepted wages for women</p>
 <p>$$ (1-p) \frac{\frac{1}{s_{FN}}f\left(\frac{w_i-l_{FN}}{s_{FN}} \right)}{\tilde{F}\left( \frac{\rho U_F - l_{FN}}{s_{FN}} \right)} + p \frac{\frac{1}{s_{FP}}f\left(\frac{w_i-l_{FP}}{s_{FP}} \right)}{\tilde{F}\left( \frac{\rho U_{FP} - l_{FP}}{s_{}FP} \right)} $$</p>
-<p>$$l_{FN} \equiv \alpha\mu_F + (1-\alpha)\rho U_F \hspace{1cm} l_{FP} \equiv \alpha\mu_F + (1-\alpha)\rho U_F - \alpha d \hspace{1cm} s_{FN} = s_{FP} \equiv \alpha \sigma_F$$</p>
+<p>$$l_{FN} \equiv \alpha\mu_F + (1-\alpha)\rho U_F \hspace{1cm} l_{FP} \equiv \alpha\mu_F + (1-\alpha)\rho U_F - \alpha d$$</p>
+<p>$$s_{FN} = s_{FP} \equiv \alpha \sigma_F$$</p>
 </li>
 </ul>
 </li>
@@ -12210,10 +12204,8 @@ a.anchor-link {
     <span class="n">f</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="s1">&#39;dur&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">hF</span><span class="o">/</span><span class="p">(</span><span class="n">hF</span><span class="o">+</span><span class="err">η</span><span class="n">F</span><span class="p">))</span>
     <span class="n">g</span> <span class="o">=</span> <span class="n">FU</span><span class="p">[</span><span class="s1">&#39;dur&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="err">η</span><span class="n">F</span><span class="p">)</span>
     <span class="n">h</span> <span class="o">=</span> <span class="o">-</span> <span class="n">hF</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">FU</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
-
     <span class="n">y</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">/</span><span class="err">α</span><span class="p">)</span> <span class="o">*</span> <span class="n">dens_accepted</span><span class="p">(</span><span class="n">FE</span><span class="p">[</span><span class="s1">&#39;wage&#39;</span><span class="p">],</span> <span class="err">α</span><span class="p">,</span> <span class="err">μ</span><span class="n">F</span><span class="p">,</span> <span class="err">σ</span><span class="n">F</span><span class="p">,</span> <span class="n">wstarF</span><span class="p">)</span>
     <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span><span class="o">/</span><span class="err">α</span><span class="p">)</span> <span class="o">*</span> <span class="n">dens_accepted_prej</span><span class="p">(</span><span class="n">FE</span><span class="p">[</span><span class="s1">&#39;wage&#39;</span><span class="p">],</span> <span class="err">α</span><span class="p">,</span> <span class="err">μ</span><span class="n">F</span><span class="p">,</span> <span class="err">σ</span><span class="n">F</span><span class="p">,</span> <span class="n">wstarF</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-
     <span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span> <span class="p">)</span> <span class="p">)</span>
 
     <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">e</span> <span class="o">+</span> <span class="n">f</span> <span class="o">+</span> <span class="n">g</span> <span class="o">+</span> <span class="n">h</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
@@ -12342,7 +12334,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Estimation-Results-with-CPS-(1995)">Estimation Results with CPS (1995)<a class="anchor-link" href="#Estimation-Results-with-CPS-(1995)">&#182;</a></h2><p><img src='./figures/CPSest.png'># width="500"&gt;</p>
+<h2 id="Estimation-Results-with-CPS-(1995)">Estimation Results with CPS (1995)<a class="anchor-link" href="#Estimation-Results-with-CPS-(1995)">&#182;</a></h2><p><img src='./figures/CPSest.png' width="500"></p>
 
 </div>
 </div>
@@ -12351,7 +12343,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Output-from-Flabbi-2010">Output from Flabbi 2010<a class="anchor-link" href="#Output-from-Flabbi-2010">&#182;</a></h2><p><img src='./figures/FlabbiMLE.png'>#  width="500"&gt;</p>
+<h2 id="Output-from-Flabbi-2010">Output from Flabbi 2010<a class="anchor-link" href="#Output-from-Flabbi-2010">&#182;</a></h2><p><img src='./figures/FlabbiMLE.png'  width="500"></p>
 
 </div>
 </div>
@@ -12413,44 +12405,248 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p>Stationary, continuous time search-match-bargaining model</p>
-<ul>
+<li>Stationary, continuous time search-match-bargaining model<ul>
 <li>Common discount rate $\rho$ and death rate $\delta$</li>
-<li>Meet at arrival rate $\lambda$, termination at rate $\eta$</li>
+<li>Meet at arrival rate $\lambda$, termination at rate $\eta$ </li>
 <li>Match-specific productivity $x \sim G(x)$ realized when meeting</li>
 <li>Wages by Nash bargaining with power $\alpha$</li>
 <li>Flow (dis)utility of unemployment $b$</li>
 </ul>
 </li>
-<li><p>Workers $\in$ { Male, Female }</p>
-</li>
+</ul>
+<ul>
+<li>Workers $\in$ { Male, Female }</li>
 <li>Firms $\in$ {Prejudiced, Not Prejudiced }<ul>
 <li>Prejudiced employers are of proportion $p$</li>
 <li>Experience a disutility flow $d$ of working with women.</li>
 </ul>
 </li>
 </ul>
+<ul>
+<li>Types fully revealed when meeting</li>
+</ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Extension-of-the-Model">Extension of the Model<a class="anchor-link" href="#Extension-of-the-Model">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Include promotion shocks<ul>
+<li><p>Include promotion shocks (inspired by Bobba, Flabbi, Levy, Tejada 2019)</p>
+<ul>
 <li>Employees start in the labor market at position level $a_0$</li>
-<li>When employed, they receive a promotion shock $\tau_{\textbf{I}_{\{F,P\}},k}$ to level $k'&gt;k$</li>
+<li>When employed, they receive a promotion shock following Poisson process $\tau_{\textbf{I}_{\{F,P\}},k}$ to level $k'&gt;k$<ul>
+<li>$\tau_{0,k} &gt; \tau_{1,k}$</li>
+</ul>
+</li>
 <li>The position shock does not depreciate</li>
 <li>Productivity $y(k,x) = a_k x$</li>
+</ul>
+</li>
+<li><p>Linear utility in wages and profits</p>
+</li>
+</ul>
+<p>$$ u_J = w_{JI}(x;k) \hspace{2cm} u_I = y(k,x) - d\textbf{I}_{F,P} - w(x,k)$$</p>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Flabbi 2010 showed: Presence of prejudiced employers lead to a lower outside option for women ==&gt; women are willing to accept at a lower wage with higher match-value productivity</p>
+<p>Promotion shock adds: Women who are faced with a prejudiced employer are now reducing their ability to move up the ladder ==&gt; widening the gap between men and women</p>
+
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Value-Functions:-Employed">Value Functions: Employed<a class="anchor-link" href="#Value-Functions:-Employed">&#182;</a></h2><p>$$W_J(w_{JI}(x;k)) = \frac{w_{JI}(x,k) + \eta U_J + \tau_{\textbf{I}_{\{F,P\}},k} \sum_{k'=k+1}^K W_J(w_{JI}(x;k'))P(k'|k)}{\tilde{\rho} + \eta + \tau_{\textbf{I}_{\{F,P\}},k}} $$</p>
+<p>$$\tilde{\rho} \equiv \rho + \delta$$</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>\begin{align*}
+   W_J(w_{JI}(x;k)) &amp;= w_{JI}(x;k)\Delta t + \frac{1-\delta\Delta t}{1-\rho\Delta t}\Bigg[ \eta\Delta t U_J \\
+   &amp;+ (1-\eta\Delta t)\Bigg(\tau_{\textbf{I}_{\{F,P\}},k}\Delta t \sum_{k'=k+1}^K W_J(w_{JI}(x;k'))P(k'|k) \\
+   &amp;+  (1-\tau_{\textbf{I}_{\{F,P\}},k}\Delta t)W_J(w_{JI}(x;k))\Bigg) + o(\Delta t) \Bigg]
+\end{align*}</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Value-Functions:-Unemployed">Value Functions: Unemployed<a class="anchor-link" href="#Value-Functions:-Unemployed">&#182;</a></h2><p>\begin{align*}
+    \tilde{\rho}U_j(k) &amp;= b + \lambda\Bigg(p \int \max \{W_j(w_{JP}(x; k))-U_J,0\} dG(x)\\
+    &amp; + (1-p) \int \max \{W_j(w_{NJ}(x;k))-U_J, 0\} dG(x) \Bigg)
+\end{align*}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>\begin{align*}
+    U_J(k) &amp;= b\Delta t + \frac{1-\delta\Delta t}{1-\rho\Delta t}\Bigg((1-\lambda\Delta t)U_J(k) + \lambda\Delta t p \int \max \{W_j(w_{JP}(x; k)),U_J\} dG(x) \\
+    &amp; + \lambda\Delta t (1-p) \int \max \{W_j(w_{NJ}(x; k),U_J\} dG(x) + o(\Delta t) \Bigg)
+\end{align*}</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Wages">Wages<a class="anchor-link" href="#Wages">&#182;</a></h2><p>$$ w_{JI}(x, U_J; k) = \arg \max_w \left\{ \left[\frac{W_J(x; k) - U_J(k)}{\tilde{\rho} + \eta + \tau_{\textbf{I}_{\{F,P\}},k}}\right]^\alpha \left[\frac{y(k,x) - d\textbf{I}_{F,P} - w}{\tilde{\rho} + \eta}\right]^{(1-\alpha)} \right\} $$</p>
+<p>$$ \implies $$</p>
+<p>\begin{align*}
+    w^*_{JI}(x, U_J; k) &amp;= \alpha \big(y(k,x)-d\textbf{I}_{F,P}\big) \\
+    &amp; + (1-\alpha) \left((\tilde{\rho} + \tau_{\textbf{I}_{\{F,P\}},k}) U_J + \tau_{\textbf{I}_{\{F,P\}},k} \sum_{k'=k+1}^K W_J(w_{JI}(x;k'))P(k'|k) \right)
+\end{align*}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Wages-for-Men">Wages for Men<a class="anchor-link" href="#Wages-for-Men">&#182;</a></h3><p>$$w_{MI}^*(x, U_M; k) = \alpha y(k,x) + (1-\alpha)\left( (\tilde{\rho} + \tau_{0,k}) U_M +\tau_{0,k}\sum_{k'=k+1}^K W_M(w_M(x;k'))P(k'|k)  \right)$$</p>
+<h3 id="Wages-for-Women-at-Unprejudiced-Employer">Wages for Women at Unprejudiced Employer<a class="anchor-link" href="#Wages-for-Women-at-Unprejudiced-Employer">&#182;</a></h3><p>$$w_{FN}^*(x, U_F; k) = \alpha y(k,x) + (1-\alpha)\left( (\tilde{\rho} + \tau_{0,k}) U_F +\tau_{0,k} \sum_{k'=k+1}^K W_F(w_{FN}(x;k'))P(k'|k)  \right) $$</p>
+<h3 id="Wages-for-Women-at-Prejudiced-Employer">Wages for Women at Prejudiced Employer<a class="anchor-link" href="#Wages-for-Women-at-Prejudiced-Employer">&#182;</a></h3><p>$$ w^*_{FP}(x, U_F; k) = \alpha (y(k,x)-d) + (1-\alpha) \left((\tilde{\rho} + \tau_{1,k}) U_F + \tau_{1,k} \sum_{k'=k+1}^K W_F(w_{FP}(x;k'))P(k'|k) \right) $$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Equilibrium">Equilibrium<a class="anchor-link" href="#Equilibrium">&#182;</a></h2><ul>
+<li>There exists a reservation wage value for every level $k$ defined by </li>
+</ul>
+<p>$$W_J(w^*_{JI}(k)) = \tilde{\rho} U_J(k)$$</p>
+<ul>
+<li>We can use the reservation wage value to find the reservation match-specific productivity for all types, matches, and position levels </li>
+</ul>
+<p>$$x_{JI}^*(k) :\hspace{1cm} W_J(w_{JI}(x^*_{JI};k)) = U_J(k), \hspace{1cm} \pi_{JI}(x^*_{JI},k) = 0$$</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Given a vector $(\tilde{\rho}, \eta, \tau_{\textbf{I}_{\{F,P\}},k}, \lambda, b, \alpha)$ and distributions $(G(x), \{a_k\}_{k=1}^K)$ an equilibrium is a vector of values of unemployment $(U^*_M(k),U^*_F(k)), k=1,...K$, satisfying the value functions for employment and unemployment, the optimal wage equation, and the reservation match-specific producitivity. </li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Identification-Strategy">Identification Strategy<a class="anchor-link" href="#Identification-Strategy">&#182;</a></h2><ul>
+<li>Follows Flabbi 2010 and Bobba et al. 2019</li>
+</ul>
+<ul>
+<li>Equilibrium objects $\{ \tilde{\rho}, \eta, \lambda, b, \alpha \}$ identified as in Flabbi 2010<ul>
+<li>Equilibrium wage and reservation wage equations with distributional assumptions on $G(x)$</li>
+<li>$\tilde{\rho}$ and $b$ are only jointly identified</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Flinn et al. 2017 showed that setting an upper and lower bound is necessary for identifying $\{a_k\}_{k=1}^K$, then the range can be discretized in equal intervals<ul>
+<li>$a_1 = 1$, robustness checks for $a_K$ and number of intervals</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Position shocks $\tau_{\textbf{I}_{\{F,P\}},k}$ induce a renegotiation <ul>
+<li>Wages and position title transition provide identification</li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Estimation-with-SOEP-(2007-2017)">Estimation with SOEP (2007-2017)<a class="anchor-link" href="#Estimation-with-SOEP-(2007-2017)">&#182;</a></h2><p><img src='./figures/SOEPfreq.png'></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Going-Forward">Going Forward<a class="anchor-link" href="#Going-Forward">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Estimation with CPS (1995)<ul>
+<li>Double-check code for MLE procedure</li>
+<li>Check standard errors process </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Estimation with SOEP (2017) <ul>
+<li>Check code to determine why the MLE procedure is unsuccessful </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Extension of Model <ul>
+<li>Value function iteration to solve model</li>
+<li>Expand on estimation strategy (Bobba et al. use Method of Simulated Moments)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section>
 </div>
 </div>
 
